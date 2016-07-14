@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4304E3BE1D08AFDD00F02A0D /* percentageHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4304E3BC1D08AFDD00F02A0D /* percentageHeaderTableViewCell.swift */; };
+		4304E3BF1D08AFDD00F02A0D /* percentageHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4304E3BD1D08AFDD00F02A0D /* percentageHeaderTableViewCell.xib */; };
+		4304E3C21D08B00100F02A0D /* percentageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4304E3C01D08B00100F02A0D /* percentageTableViewCell.swift */; };
+		4304E3C31D08B00100F02A0D /* percentageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4304E3C11D08B00100F02A0D /* percentageTableViewCell.xib */; };
+		4305D1321CDCCB5F007442C9 /* AbExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D1311CDCCB5F007442C9 /* AbExercisesTableViewController.swift */; };
+		4305D1341CDCCBA7007442C9 /* BackExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D1331CDCCBA7007442C9 /* BackExercisesTableViewController.swift */; };
+		4305D1371CDCCBE4007442C9 /* ArmExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D1361CDCCBE4007442C9 /* ArmExercisesTableViewController.swift */; };
+		4305D1391CDCCBF5007442C9 /* ChestExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D1381CDCCBF5007442C9 /* ChestExercisesTableViewController.swift */; };
+		4305D13B1CDCCC07007442C9 /* LegExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D13A1CDCCC07007442C9 /* LegExercisesTableViewController.swift */; };
+		4305D13D1CDCCC1C007442C9 /* ShoulderExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D13C1CDCCC1C007442C9 /* ShoulderExercisesTableViewController.swift */; };
+		4305D13F1CDCCC2E007442C9 /* TricepExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4305D13E1CDCCC2E007442C9 /* TricepExercisesTableViewController.swift */; };
+		431A92FB1CE51BCF004E6BCF /* PRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A92F91CE51BCF004E6BCF /* PRTableViewCell.swift */; };
+		431A92FC1CE51BCF004E6BCF /* PRTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431A92FA1CE51BCF004E6BCF /* PRTableViewCell.xib */; };
+		43285DBC1CDE74BD00AB9F0F /* addPRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43285DBB1CDE74BD00AB9F0F /* addPRTableViewController.swift */; };
+		433778F51CE1037900B497C4 /* PRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433778F41CE1037900B497C4 /* PRManager.swift */; };
+		433778FE1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433778FC1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld */; };
+		433779001CE10A7D00B497C4 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433778FF1CE10A7D00B497C4 /* PersistenceHelper.swift */; };
+		438B99E61D21C42700AEB107 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438B99E51D21C42700AEB107 /* StoreKit.framework */; };
+		438BD7A21CE3A2CF00B65576 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438BD7A11CE3A2CF00B65576 /* PRViewController.swift */; };
+		439CC7631CD97C2800891E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7621CD97C2800891E68 /* AppDelegate.swift */; };
+		439CC76A1CD97C2800891E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439CC7681CD97C2800891E68 /* Main.storyboard */; };
+		439CC76C1CD97C2800891E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439CC76B1CD97C2800891E68 /* Assets.xcassets */; };
+		439CC76F1CD97C2800891E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439CC76D1CD97C2800891E68 /* LaunchScreen.storyboard */; };
+		439CC77A1CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7791CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift */; };
+		439CC7851CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7841CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift */; };
+		43B3C59A1CFD17CE0048FB95 /* PRPercentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3C5991CFD17CE0048FB95 /* PRPercentTableViewController.swift */; };
+		43B6F3F51CFDEC8200CF3738 /* prPercentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6F3F31CFDEC8200CF3738 /* prPercentTableViewCell.swift */; };
+		43B6F3F61CFDEC8200CF3738 /* prPercentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B6F3F41CFDEC8200CF3738 /* prPercentTableViewCell.xib */; };
+		43C86AC51D0F4D9600965787 /* PRCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C86AC41D0F4D9600965787 /* PRCellsViewController.swift */; };
+		43CDD5291CDA6E9C0022B178 /* DataTableExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDD5281CDA6E9C0022B178 /* DataTableExercisesTableViewController.swift */; };
+		43CDD52B1CDAC85B0022B178 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CDD52A1CDAC85B0022B178 /* MoreTableViewController.swift */; };
+		43DBEDB51CE64CEC0078D584 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED971CE64CEC0078D584 /* AsyncButton.swift */; };
+		43DBEDB61CE64CEC0078D584 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED981CE64CEC0078D584 /* AsyncImageView.swift */; };
+		43DBEDB71CE64CEC0078D584 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED991CE64CEC0078D584 /* AutoTextView.swift */; };
+		43DBEDB81CE64CEC0078D584 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED9A1CE64CEC0078D584 /* BlurView.swift */; };
+		43DBEDB91CE64CEC0078D584 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED9B1CE64CEC0078D584 /* DesignableButton.swift */; };
+		43DBEDBA1CE64CEC0078D584 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED9C1CE64CEC0078D584 /* DesignableImageView.swift */; };
+		43DBEDBB1CE64CEC0078D584 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED9D1CE64CEC0078D584 /* DesignableLabel.swift */; };
+		43DBEDBC1CE64CEC0078D584 /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED9E1CE64CEC0078D584 /* DesignableTabBarController.swift */; };
+		43DBEDBD1CE64CEC0078D584 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBED9F1CE64CEC0078D584 /* DesignableTextField.swift */; };
+		43DBEDBE1CE64CEC0078D584 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA01CE64CEC0078D584 /* DesignableTextView.swift */; };
+		43DBEDBF1CE64CEC0078D584 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA11CE64CEC0078D584 /* DesignableView.swift */; };
+		43DBEDC01CE64CEC0078D584 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA21CE64CEC0078D584 /* ImageLoader.swift */; };
+		43DBEDC11CE64CEC0078D584 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43DBEDA31CE64CEC0078D584 /* Info.plist */; };
+		43DBEDC21CE64CEC0078D584 /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA41CE64CEC0078D584 /* KeyboardLayoutConstraint.swift */; };
+		43DBEDC31CE64CEC0078D584 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA51CE64CEC0078D584 /* LoadingView.swift */; };
+		43DBEDC41CE64CEC0078D584 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DBEDA61CE64CEC0078D584 /* LoadingView.xib */; };
+		43DBEDC51CE64CEC0078D584 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA71CE64CEC0078D584 /* Misc.swift */; };
+		43DBEDC61CE64CEC0078D584 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDA81CE64CEC0078D584 /* SoundPlayer.swift */; };
+		43DBEDC71CE64CEC0078D584 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDAA1CE64CEC0078D584 /* Spring.swift */; };
+		43DBEDC81CE64CEC0078D584 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDAB1CE64CEC0078D584 /* SpringAnimation.swift */; };
+		43DBEDC91CE64CEC0078D584 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDAC1CE64CEC0078D584 /* SpringButton.swift */; };
+		43DBEDCA1CE64CEC0078D584 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDAD1CE64CEC0078D584 /* SpringImageView.swift */; };
+		43DBEDCB1CE64CEC0078D584 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDAE1CE64CEC0078D584 /* SpringLabel.swift */; };
+		43DBEDCC1CE64CEC0078D584 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDAF1CE64CEC0078D584 /* SpringTextField.swift */; };
+		43DBEDCD1CE64CEC0078D584 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDB01CE64CEC0078D584 /* SpringTextView.swift */; };
+		43DBEDCE1CE64CEC0078D584 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDB11CE64CEC0078D584 /* SpringView.swift */; };
+		43DBEDCF1CE64CEC0078D584 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDB21CE64CEC0078D584 /* TransitionManager.swift */; };
+		43DBEDD01CE64CEC0078D584 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDB31CE64CEC0078D584 /* TransitionZoom.swift */; };
+		43DBEDD11CE64CEC0078D584 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DBEDB41CE64CEC0078D584 /* UnwindSegue.swift */; };
+		43E5A7CC1D05D802002E18A2 /* PRPercentageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E5A7CA1D05D802002E18A2 /* PRPercentageTableViewCell.swift */; };
+		43E5A7CD1D05D802002E18A2 /* PRPercentageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43E5A7CB1D05D802002E18A2 /* PRPercentageTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		439CC7761CD97C2800891E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 439CC7571CD97C2700891E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 439CC75E1CD97C2700891E68;
+			remoteInfo = "PR'd - Simple PR Tracking";
+		};
+		439CC7811CD97C2800891E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 439CC7571CD97C2700891E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 439CC75E1CD97C2700891E68;
+			remoteInfo = "PR'd - Simple PR Tracking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		433AA6311D2AA70C007CF2A2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4304E3BC1D08AFDD00F02A0D /* percentageHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = percentageHeaderTableViewCell.swift; path = ../percentageHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		4304E3BD1D08AFDD00F02A0D /* percentageHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = percentageHeaderTableViewCell.xib; path = ../percentageHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		4304E3C01D08B00100F02A0D /* percentageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = percentageTableViewCell.swift; path = ../percentageTableViewCell.swift; sourceTree = "<group>"; };
+		4304E3C11D08B00100F02A0D /* percentageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = percentageTableViewCell.xib; path = ../percentageTableViewCell.xib; sourceTree = "<group>"; };
+		4305D1311CDCCB5F007442C9 /* AbExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AbExercisesTableViewController.swift; path = "Exercise View Controllers/AbExercisesTableViewController.swift"; sourceTree = "<group>"; };
+		4305D1331CDCCBA7007442C9 /* BackExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackExercisesTableViewController.swift; sourceTree = "<group>"; };
+		4305D1361CDCCBE4007442C9 /* ArmExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArmExercisesTableViewController.swift; path = ../ArmExercisesTableViewController.swift; sourceTree = "<group>"; };
+		4305D1381CDCCBF5007442C9 /* ChestExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChestExercisesTableViewController.swift; path = ../ChestExercisesTableViewController.swift; sourceTree = "<group>"; };
+		4305D13A1CDCCC07007442C9 /* LegExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LegExercisesTableViewController.swift; path = ../LegExercisesTableViewController.swift; sourceTree = "<group>"; };
+		4305D13C1CDCCC1C007442C9 /* ShoulderExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoulderExercisesTableViewController.swift; path = ../ShoulderExercisesTableViewController.swift; sourceTree = "<group>"; };
+		4305D13E1CDCCC2E007442C9 /* TricepExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TricepExercisesTableViewController.swift; path = ../TricepExercisesTableViewController.swift; sourceTree = "<group>"; };
+		431A92F91CE51BCF004E6BCF /* PRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTableViewCell.swift; path = ../PRTableViewCell.swift; sourceTree = "<group>"; };
+		431A92FA1CE51BCF004E6BCF /* PRTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PRTableViewCell.xib; path = ../PRTableViewCell.xib; sourceTree = "<group>"; };
+		43285DBB1CDE74BD00AB9F0F /* addPRTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addPRTableViewController.swift; sourceTree = "<group>"; };
+		433778F41CE1037900B497C4 /* PRManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRManager.swift; path = ../PRManager.swift; sourceTree = "<group>"; };
+		433778FD1CE1081B00B497C4 /* addPRDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = addPRDataModel.xcdatamodel; sourceTree = "<group>"; };
+		433778FF1CE10A7D00B497C4 /* PersistenceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		438B99E51D21C42700AEB107 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		438BD7A11CE3A2CF00B65576 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
+		439CC75F1CD97C2700891E68 /* PR'd - Simple PR Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PR'd - Simple PR Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		439CC7621CD97C2800891E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		439CC7691CD97C2800891E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		439CC76B1CD97C2800891E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		439CC76E1CD97C2800891E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		439CC7701CD97C2800891E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		439CC7751CD97C2800891E68 /* PR'd - Simple PR TrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PR'd - Simple PR TrackingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		439CC7791CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PR_d___Simple_PR_TrackingTests.swift"; sourceTree = "<group>"; };
+		439CC77B1CD97C2800891E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		439CC7801CD97C2800891E68 /* PR'd - Simple PR TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PR'd - Simple PR TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		439CC7841CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PR_d___Simple_PR_TrackingUITests.swift"; sourceTree = "<group>"; };
+		439CC7861CD97C2800891E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B3C5991CFD17CE0048FB95 /* PRPercentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPercentTableViewController.swift; sourceTree = "<group>"; };
+		43B6F3F31CFDEC8200CF3738 /* prPercentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prPercentTableViewCell.swift; sourceTree = "<group>"; };
+		43B6F3F41CFDEC8200CF3738 /* prPercentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = prPercentTableViewCell.xib; sourceTree = "<group>"; };
+		43C86AC41D0F4D9600965787 /* PRCellsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRCellsViewController.swift; sourceTree = "<group>"; };
+		43CDD5281CDA6E9C0022B178 /* DataTableExercisesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableExercisesTableViewController.swift; sourceTree = "<group>"; };
+		43CDD52A1CDAC85B0022B178 /* MoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreTableViewController.swift; path = ../MoreTableViewController.swift; sourceTree = "<group>"; };
+		43DBED971CE64CEC0078D584 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		43DBED981CE64CEC0078D584 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		43DBED991CE64CEC0078D584 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
+		43DBED9A1CE64CEC0078D584 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		43DBED9B1CE64CEC0078D584 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		43DBED9C1CE64CEC0078D584 /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		43DBED9D1CE64CEC0078D584 /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		43DBED9E1CE64CEC0078D584 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		43DBED9F1CE64CEC0078D584 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		43DBEDA01CE64CEC0078D584 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		43DBEDA11CE64CEC0078D584 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		43DBEDA21CE64CEC0078D584 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		43DBEDA31CE64CEC0078D584 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43DBEDA41CE64CEC0078D584 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		43DBEDA51CE64CEC0078D584 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		43DBEDA61CE64CEC0078D584 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		43DBEDA71CE64CEC0078D584 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		43DBEDA81CE64CEC0078D584 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		43DBEDA91CE64CEC0078D584 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		43DBEDAA1CE64CEC0078D584 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		43DBEDAB1CE64CEC0078D584 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		43DBEDAC1CE64CEC0078D584 /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		43DBEDAD1CE64CEC0078D584 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		43DBEDAE1CE64CEC0078D584 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		43DBEDAF1CE64CEC0078D584 /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		43DBEDB01CE64CEC0078D584 /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		43DBEDB11CE64CEC0078D584 /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		43DBEDB21CE64CEC0078D584 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		43DBEDB31CE64CEC0078D584 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		43DBEDB41CE64CEC0078D584 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		43E5A7CA1D05D802002E18A2 /* PRPercentageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPercentageTableViewCell.swift; sourceTree = "<group>"; };
+		43E5A7CB1D05D802002E18A2 /* PRPercentageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPercentageTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		439CC75C1CD97C2700891E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438B99E61D21C42700AEB107 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439CC7721CD97C2800891E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439CC77D1CD97C2800891E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4305D1351CDCCBB0007442C9 /* Exercise View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4305D1311CDCCB5F007442C9 /* AbExercisesTableViewController.swift */,
+				4305D1361CDCCBE4007442C9 /* ArmExercisesTableViewController.swift */,
+				4305D1331CDCCBA7007442C9 /* BackExercisesTableViewController.swift */,
+				4305D1381CDCCBF5007442C9 /* ChestExercisesTableViewController.swift */,
+				4305D13A1CDCCC07007442C9 /* LegExercisesTableViewController.swift */,
+				4305D13C1CDCCC1C007442C9 /* ShoulderExercisesTableViewController.swift */,
+				4305D13E1CDCCC2E007442C9 /* TricepExercisesTableViewController.swift */,
+			);
+			name = "Exercise View Controllers";
+			sourceTree = "<group>";
+		};
+		431A92F21CE4E0D3004E6BCF /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				433778FC1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld */,
+				433778F41CE1037900B497C4 /* PRManager.swift */,
+				433778FF1CE10A7D00B497C4 /* PersistenceHelper.swift */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		431A92FD1CE51D67004E6BCF /* Custom Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				431A92F91CE51BCF004E6BCF /* PRTableViewCell.swift */,
+				431A92FA1CE51BCF004E6BCF /* PRTableViewCell.xib */,
+				43B6F3F31CFDEC8200CF3738 /* prPercentTableViewCell.swift */,
+				43B6F3F41CFDEC8200CF3738 /* prPercentTableViewCell.xib */,
+				43E5A7CA1D05D802002E18A2 /* PRPercentageTableViewCell.swift */,
+				43E5A7CB1D05D802002E18A2 /* PRPercentageTableViewCell.xib */,
+				4304E3BC1D08AFDD00F02A0D /* percentageHeaderTableViewCell.swift */,
+				4304E3BD1D08AFDD00F02A0D /* percentageHeaderTableViewCell.xib */,
+				4304E3C01D08B00100F02A0D /* percentageTableViewCell.swift */,
+				4304E3C11D08B00100F02A0D /* percentageTableViewCell.xib */,
+			);
+			name = "Custom Interfaces";
+			sourceTree = "<group>";
+		};
+		439CC7561CD97C2700891E68 = {
+			isa = PBXGroup;
+			children = (
+				439CC7611CD97C2800891E68 /* PR'd - Simple PR Tracking */,
+				439CC7781CD97C2800891E68 /* PR'd - Simple PR TrackingTests */,
+				439CC7831CD97C2800891E68 /* PR'd - Simple PR TrackingUITests */,
+				439CC7601CD97C2700891E68 /* Products */,
+				43CDD52E1CDAD3C30022B178 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		439CC7601CD97C2700891E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				439CC75F1CD97C2700891E68 /* PR'd - Simple PR Tracking.app */,
+				439CC7751CD97C2800891E68 /* PR'd - Simple PR TrackingTests.xctest */,
+				439CC7801CD97C2800891E68 /* PR'd - Simple PR TrackingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		439CC7611CD97C2800891E68 /* PR'd - Simple PR Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				439CC7621CD97C2800891E68 /* AppDelegate.swift */,
+				43CDD5281CDA6E9C0022B178 /* DataTableExercisesTableViewController.swift */,
+				43CDD52A1CDAC85B0022B178 /* MoreTableViewController.swift */,
+				43285DBB1CDE74BD00AB9F0F /* addPRTableViewController.swift */,
+				438BD7A11CE3A2CF00B65576 /* PRViewController.swift */,
+				43B3C5991CFD17CE0048FB95 /* PRPercentTableViewController.swift */,
+				43C86AC41D0F4D9600965787 /* PRCellsViewController.swift */,
+				439CC7681CD97C2800891E68 /* Main.storyboard */,
+				431A92FD1CE51D67004E6BCF /* Custom Interfaces */,
+				431A92F21CE4E0D3004E6BCF /* Core Data */,
+				4305D1351CDCCBB0007442C9 /* Exercise View Controllers */,
+				B0B3E2571D2C2F6B0018A008 /* Open Source Libraries */,
+				43DBED961CE64CEC0078D584 /* Spring */,
+				439CC76B1CD97C2800891E68 /* Assets.xcassets */,
+				439CC76D1CD97C2800891E68 /* LaunchScreen.storyboard */,
+				439CC7701CD97C2800891E68 /* Info.plist */,
+			);
+			path = "PR'd - Simple PR Tracking";
+			sourceTree = "<group>";
+		};
+		439CC7781CD97C2800891E68 /* PR'd - Simple PR TrackingTests */ = {
+			isa = PBXGroup;
+			children = (
+				439CC7791CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift */,
+				439CC77B1CD97C2800891E68 /* Info.plist */,
+			);
+			path = "PR'd - Simple PR TrackingTests";
+			sourceTree = "<group>";
+		};
+		439CC7831CD97C2800891E68 /* PR'd - Simple PR TrackingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				439CC7841CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift */,
+				439CC7861CD97C2800891E68 /* Info.plist */,
+			);
+			path = "PR'd - Simple PR TrackingUITests";
+			sourceTree = "<group>";
+		};
+		43CDD52E1CDAD3C30022B178 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B99E51D21C42700AEB107 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43DBED961CE64CEC0078D584 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				43DBED971CE64CEC0078D584 /* AsyncButton.swift */,
+				43DBED981CE64CEC0078D584 /* AsyncImageView.swift */,
+				43DBED991CE64CEC0078D584 /* AutoTextView.swift */,
+				43DBED9A1CE64CEC0078D584 /* BlurView.swift */,
+				43DBED9B1CE64CEC0078D584 /* DesignableButton.swift */,
+				43DBED9C1CE64CEC0078D584 /* DesignableImageView.swift */,
+				43DBED9D1CE64CEC0078D584 /* DesignableLabel.swift */,
+				43DBED9E1CE64CEC0078D584 /* DesignableTabBarController.swift */,
+				43DBED9F1CE64CEC0078D584 /* DesignableTextField.swift */,
+				43DBEDA01CE64CEC0078D584 /* DesignableTextView.swift */,
+				43DBEDA11CE64CEC0078D584 /* DesignableView.swift */,
+				43DBEDA21CE64CEC0078D584 /* ImageLoader.swift */,
+				43DBEDA31CE64CEC0078D584 /* Info.plist */,
+				43DBEDA41CE64CEC0078D584 /* KeyboardLayoutConstraint.swift */,
+				43DBEDA51CE64CEC0078D584 /* LoadingView.swift */,
+				43DBEDA61CE64CEC0078D584 /* LoadingView.xib */,
+				43DBEDA71CE64CEC0078D584 /* Misc.swift */,
+				43DBEDA81CE64CEC0078D584 /* SoundPlayer.swift */,
+				43DBEDA91CE64CEC0078D584 /* Spring.h */,
+				43DBEDAA1CE64CEC0078D584 /* Spring.swift */,
+				43DBEDAB1CE64CEC0078D584 /* SpringAnimation.swift */,
+				43DBEDAC1CE64CEC0078D584 /* SpringButton.swift */,
+				43DBEDAD1CE64CEC0078D584 /* SpringImageView.swift */,
+				43DBEDAE1CE64CEC0078D584 /* SpringLabel.swift */,
+				43DBEDAF1CE64CEC0078D584 /* SpringTextField.swift */,
+				43DBEDB01CE64CEC0078D584 /* SpringTextView.swift */,
+				43DBEDB11CE64CEC0078D584 /* SpringView.swift */,
+				43DBEDB21CE64CEC0078D584 /* TransitionManager.swift */,
+				43DBEDB31CE64CEC0078D584 /* TransitionZoom.swift */,
+				43DBEDB41CE64CEC0078D584 /* UnwindSegue.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		B0B3E2571D2C2F6B0018A008 /* Open Source Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Open Source Libraries";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		439CC75E1CD97C2700891E68 /* PR'd - Simple PR Tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439CC7891CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR Tracking" */;
+			buildPhases = (
+				439CC75B1CD97C2700891E68 /* Sources */,
+				439CC75C1CD97C2700891E68 /* Frameworks */,
+				439CC75D1CD97C2700891E68 /* Resources */,
+				433AA6311D2AA70C007CF2A2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PR'd - Simple PR Tracking";
+			productName = "PR'd - Simple PR Tracking";
+			productReference = 439CC75F1CD97C2700891E68 /* PR'd - Simple PR Tracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		439CC7741CD97C2800891E68 /* PR'd - Simple PR TrackingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439CC78C1CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR TrackingTests" */;
+			buildPhases = (
+				439CC7711CD97C2800891E68 /* Sources */,
+				439CC7721CD97C2800891E68 /* Frameworks */,
+				439CC7731CD97C2800891E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				439CC7771CD97C2800891E68 /* PBXTargetDependency */,
+			);
+			name = "PR'd - Simple PR TrackingTests";
+			productName = "PR'd - Simple PR TrackingTests";
+			productReference = 439CC7751CD97C2800891E68 /* PR'd - Simple PR TrackingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		439CC77F1CD97C2800891E68 /* PR'd - Simple PR TrackingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 439CC78F1CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR TrackingUITests" */;
+			buildPhases = (
+				439CC77C1CD97C2800891E68 /* Sources */,
+				439CC77D1CD97C2800891E68 /* Frameworks */,
+				439CC77E1CD97C2800891E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				439CC7821CD97C2800891E68 /* PBXTargetDependency */,
+			);
+			name = "PR'd - Simple PR TrackingUITests";
+			productName = "PR'd - Simple PR TrackingUITests";
+			productReference = 439CC7801CD97C2800891E68 /* PR'd - Simple PR TrackingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		439CC7571CD97C2700891E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Nate;
+				TargetAttributes = {
+					439CC75E1CD97C2700891E68 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 333JD3XATC;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					439CC7741CD97C2800891E68 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 439CC75E1CD97C2700891E68;
+					};
+					439CC77F1CD97C2800891E68 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 439CC75E1CD97C2700891E68;
+					};
+				};
+			};
+			buildConfigurationList = 439CC75A1CD97C2700891E68 /* Build configuration list for PBXProject "PR'd - Simple PR Tracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 439CC7561CD97C2700891E68;
+			productRefGroup = 439CC7601CD97C2700891E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				439CC75E1CD97C2700891E68 /* PR'd - Simple PR Tracking */,
+				439CC7741CD97C2800891E68 /* PR'd - Simple PR TrackingTests */,
+				439CC77F1CD97C2800891E68 /* PR'd - Simple PR TrackingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		439CC75D1CD97C2700891E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4304E3BF1D08AFDD00F02A0D /* percentageHeaderTableViewCell.xib in Resources */,
+				439CC76F1CD97C2800891E68 /* LaunchScreen.storyboard in Resources */,
+				43E5A7CD1D05D802002E18A2 /* PRPercentageTableViewCell.xib in Resources */,
+				43B6F3F61CFDEC8200CF3738 /* prPercentTableViewCell.xib in Resources */,
+				431A92FC1CE51BCF004E6BCF /* PRTableViewCell.xib in Resources */,
+				439CC76C1CD97C2800891E68 /* Assets.xcassets in Resources */,
+				43DBEDC41CE64CEC0078D584 /* LoadingView.xib in Resources */,
+				4304E3C31D08B00100F02A0D /* percentageTableViewCell.xib in Resources */,
+				43DBEDC11CE64CEC0078D584 /* Info.plist in Resources */,
+				439CC76A1CD97C2800891E68 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439CC7731CD97C2800891E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439CC77E1CD97C2800891E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		439CC75B1CD97C2700891E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DBEDC51CE64CEC0078D584 /* Misc.swift in Sources */,
+				43DBEDC81CE64CEC0078D584 /* SpringAnimation.swift in Sources */,
+				43DBEDBB1CE64CEC0078D584 /* DesignableLabel.swift in Sources */,
+				43DBEDC61CE64CEC0078D584 /* SoundPlayer.swift in Sources */,
+				43DBEDC21CE64CEC0078D584 /* KeyboardLayoutConstraint.swift in Sources */,
+				43DBEDCA1CE64CEC0078D584 /* SpringImageView.swift in Sources */,
+				43B6F3F51CFDEC8200CF3738 /* prPercentTableViewCell.swift in Sources */,
+				4305D1371CDCCBE4007442C9 /* ArmExercisesTableViewController.swift in Sources */,
+				43DBEDBD1CE64CEC0078D584 /* DesignableTextField.swift in Sources */,
+				433778FE1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld in Sources */,
+				43DBEDB91CE64CEC0078D584 /* DesignableButton.swift in Sources */,
+				43E5A7CC1D05D802002E18A2 /* PRPercentageTableViewCell.swift in Sources */,
+				43B3C59A1CFD17CE0048FB95 /* PRPercentTableViewController.swift in Sources */,
+				43DBEDCB1CE64CEC0078D584 /* SpringLabel.swift in Sources */,
+				43C86AC51D0F4D9600965787 /* PRCellsViewController.swift in Sources */,
+				43DBEDB51CE64CEC0078D584 /* AsyncButton.swift in Sources */,
+				438BD7A21CE3A2CF00B65576 /* PRViewController.swift in Sources */,
+				4305D13B1CDCCC07007442C9 /* LegExercisesTableViewController.swift in Sources */,
+				43DBEDB61CE64CEC0078D584 /* AsyncImageView.swift in Sources */,
+				4305D1321CDCCB5F007442C9 /* AbExercisesTableViewController.swift in Sources */,
+				431A92FB1CE51BCF004E6BCF /* PRTableViewCell.swift in Sources */,
+				43DBEDBC1CE64CEC0078D584 /* DesignableTabBarController.swift in Sources */,
+				439CC7631CD97C2800891E68 /* AppDelegate.swift in Sources */,
+				433778F51CE1037900B497C4 /* PRManager.swift in Sources */,
+				43DBEDCF1CE64CEC0078D584 /* TransitionManager.swift in Sources */,
+				43DBEDC01CE64CEC0078D584 /* ImageLoader.swift in Sources */,
+				4305D1391CDCCBF5007442C9 /* ChestExercisesTableViewController.swift in Sources */,
+				43DBEDBA1CE64CEC0078D584 /* DesignableImageView.swift in Sources */,
+				43DBEDB71CE64CEC0078D584 /* AutoTextView.swift in Sources */,
+				4305D13F1CDCCC2E007442C9 /* TricepExercisesTableViewController.swift in Sources */,
+				43DBEDCE1CE64CEC0078D584 /* SpringView.swift in Sources */,
+				43DBEDD01CE64CEC0078D584 /* TransitionZoom.swift in Sources */,
+				4305D1341CDCCBA7007442C9 /* BackExercisesTableViewController.swift in Sources */,
+				43CDD5291CDA6E9C0022B178 /* DataTableExercisesTableViewController.swift in Sources */,
+				43CDD52B1CDAC85B0022B178 /* MoreTableViewController.swift in Sources */,
+				43DBEDC31CE64CEC0078D584 /* LoadingView.swift in Sources */,
+				4304E3BE1D08AFDD00F02A0D /* percentageHeaderTableViewCell.swift in Sources */,
+				4305D13D1CDCCC1C007442C9 /* ShoulderExercisesTableViewController.swift in Sources */,
+				43DBEDC91CE64CEC0078D584 /* SpringButton.swift in Sources */,
+				43DBEDB81CE64CEC0078D584 /* BlurView.swift in Sources */,
+				43DBEDCC1CE64CEC0078D584 /* SpringTextField.swift in Sources */,
+				43DBEDD11CE64CEC0078D584 /* UnwindSegue.swift in Sources */,
+				4304E3C21D08B00100F02A0D /* percentageTableViewCell.swift in Sources */,
+				43DBEDCD1CE64CEC0078D584 /* SpringTextView.swift in Sources */,
+				43DBEDBE1CE64CEC0078D584 /* DesignableTextView.swift in Sources */,
+				43DBEDC71CE64CEC0078D584 /* Spring.swift in Sources */,
+				433779001CE10A7D00B497C4 /* PersistenceHelper.swift in Sources */,
+				43285DBC1CDE74BD00AB9F0F /* addPRTableViewController.swift in Sources */,
+				43DBEDBF1CE64CEC0078D584 /* DesignableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439CC7711CD97C2800891E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439CC77A1CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		439CC77C1CD97C2800891E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439CC7851CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		439CC7771CD97C2800891E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 439CC75E1CD97C2700891E68 /* PR'd - Simple PR Tracking */;
+			targetProxy = 439CC7761CD97C2800891E68 /* PBXContainerItemProxy */;
+		};
+		439CC7821CD97C2800891E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 439CC75E1CD97C2700891E68 /* PR'd - Simple PR Tracking */;
+			targetProxy = 439CC7811CD97C2800891E68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		439CC7681CD97C2800891E68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				439CC7691CD97C2800891E68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		439CC76D1CD97C2800891E68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				439CC76E1CD97C2800891E68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		432F25231D35E2D900B1FF11 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		432F25241D35E2D900B1FF11 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "PR'd - Simple PR Tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-s---Simple-PR-Tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+			};
+			name = Distribution;
+		};
+		432F25251D35E2D900B1FF11 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PR'd - Simple PR TrackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-d---Simple-PR-TrackingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PR'd - Simple PR Tracking.app/PR'd - Simple PR Tracking";
+			};
+			name = Distribution;
+		};
+		432F25261D35E2D900B1FF11 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PR'd - Simple PR TrackingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-d---Simple-PR-TrackingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PR'd - Simple PR Tracking";
+			};
+			name = Distribution;
+		};
+		439CC7871CD97C2800891E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		439CC7881CD97C2800891E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		439CC78A1CD97C2800891E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "PR'd - Simple PR Tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-s---Simple-PR-Tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+			};
+			name = Debug;
+		};
+		439CC78B1CD97C2800891E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				DEFINES_MODULE = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "PR'd - Simple PR Tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-s---Simple-PR-Tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+			};
+			name = Release;
+		};
+		439CC78D1CD97C2800891E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PR'd - Simple PR TrackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-d---Simple-PR-TrackingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PR'd - Simple PR Tracking.app/PR'd - Simple PR Tracking";
+			};
+			name = Debug;
+		};
+		439CC78E1CD97C2800891E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PR'd - Simple PR TrackingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-d---Simple-PR-TrackingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PR'd - Simple PR Tracking.app/PR'd - Simple PR Tracking";
+			};
+			name = Release;
+		};
+		439CC7901CD97C2800891E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PR'd - Simple PR TrackingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-d---Simple-PR-TrackingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PR'd - Simple PR Tracking";
+			};
+			name = Debug;
+		};
+		439CC7911CD97C2800891E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PR'd - Simple PR TrackingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-d---Simple-PR-TrackingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PR'd - Simple PR Tracking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		439CC75A1CD97C2700891E68 /* Build configuration list for PBXProject "PR'd - Simple PR Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439CC7871CD97C2800891E68 /* Debug */,
+				439CC7881CD97C2800891E68 /* Release */,
+				432F25231D35E2D900B1FF11 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		439CC7891CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439CC78A1CD97C2800891E68 /* Debug */,
+				439CC78B1CD97C2800891E68 /* Release */,
+				432F25241D35E2D900B1FF11 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		439CC78C1CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR TrackingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439CC78D1CD97C2800891E68 /* Debug */,
+				439CC78E1CD97C2800891E68 /* Release */,
+				432F25251D35E2D900B1FF11 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		439CC78F1CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR TrackingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				439CC7901CD97C2800891E68 /* Debug */,
+				439CC7911CD97C2800891E68 /* Release */,
+				432F25261D35E2D900B1FF11 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		433778FC1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				433778FD1CE1081B00B497C4 /* addPRDataModel.xcdatamodel */,
+			);
+			currentVersion = 433778FD1CE1081B00B497C4 /* addPRDataModel.xcdatamodel */;
+			path = addPRDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 439CC7571CD97C2700891E68 /* Project object */;
+}

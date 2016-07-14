@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="prDetails" rowHeight="198" id="6u9-dT-bC3" customClass="prPercentTableViewCell" customModule="PR_d___Simple_PR_Tracking" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="193"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6u9-dT-bC3" id="kgx-ta-d1x">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="192.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="225lb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyi-gb-Wkc">
+                        <rect key="frame" x="8" y="113" width="121" height="53"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="53" id="Kh6-CS-TtV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.30196078430000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today I hit a new PR on the Close Grip Bench Press" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgB-zQ-bp9">
+                        <rect key="frame" x="8" y="54" width="275" height="54"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.38823529410000002" green="0.38823529410000002" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close Grip Bench Press" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFs-Pq-Mzu">
+                        <rect key="frame" x="8" y="20" width="346" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="X8j-FU-hBl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.30196078430000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.38823529410000002" green="0.4039215686" blue="0.38823529410000002" alpha="0.091460129309999999" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="fgB-zQ-bp9" firstAttribute="leading" secondItem="Yyi-gb-Wkc" secondAttribute="leading" id="45W-nD-dj8"/>
+                    <constraint firstItem="Yyi-gb-Wkc" firstAttribute="top" secondItem="fgB-zQ-bp9" secondAttribute="bottom" constant="5" id="8fw-Zb-ShS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fgB-zQ-bp9" secondAttribute="trailing" constant="84" id="Gcn-Ja-ykS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Yyi-gb-Wkc" secondAttribute="bottom" constant="7" id="Pvn-xs-4Id"/>
+                    <constraint firstItem="qFs-Pq-Mzu" firstAttribute="leading" secondItem="kgx-ta-d1x" secondAttribute="leadingMargin" id="UEF-7t-q4c"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qFs-Pq-Mzu" secondAttribute="trailing" constant="13" id="VxP-xg-pXh"/>
+                    <constraint firstItem="qFs-Pq-Mzu" firstAttribute="leading" secondItem="fgB-zQ-bp9" secondAttribute="leading" id="dxo-DR-TdJ"/>
+                    <constraint firstItem="qFs-Pq-Mzu" firstAttribute="top" secondItem="kgx-ta-d1x" secondAttribute="topMargin" constant="12" id="jLi-mu-UgU"/>
+                    <constraint firstItem="fgB-zQ-bp9" firstAttribute="top" secondItem="qFs-Pq-Mzu" secondAttribute="bottom" constant="3" id="lLt-RR-1NC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="prName" destination="qFs-Pq-Mzu" id="aSS-5k-gY2"/>
+                <outlet property="prNotes" destination="fgB-zQ-bp9" id="DJJ-Tg-C2e"/>
+                <outlet property="prWeight" destination="Yyi-gb-Wkc" id="6DS-rR-nSt"/>
+            </connections>
+            <point key="canvasLocation" x="298.5" y="391.5"/>
+        </tableViewCell>
+    </objects>
+</document>

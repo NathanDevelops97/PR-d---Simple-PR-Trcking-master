@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0730"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "439CC75E1CD97C2700891E68"
+               BuildableName = "PR&apos;d - Simple PR Tracking.app"
+               BlueprintName = "PR&apos;d - Simple PR Tracking"
+               ReferencedContainer = "container:PR&apos;d - Simple PR Tracking.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "439CC7741CD97C2800891E68"
+               BuildableName = "PR&apos;d - Simple PR TrackingTests.xctest"
+               BlueprintName = "PR&apos;d - Simple PR TrackingTests"
+               ReferencedContainer = "container:PR&apos;d - Simple PR Tracking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "439CC77F1CD97C2800891E68"
+               BuildableName = "PR&apos;d - Simple PR TrackingUITests.xctest"
+               BlueprintName = "PR&apos;d - Simple PR TrackingUITests"
+               ReferencedContainer = "container:PR&apos;d - Simple PR Tracking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "439CC75E1CD97C2700891E68"
+            BuildableName = "PR&apos;d - Simple PR Tracking.app"
+            BlueprintName = "PR&apos;d - Simple PR Tracking"
+            ReferencedContainer = "container:PR&apos;d - Simple PR Tracking.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "439CC75E1CD97C2700891E68"
+            BuildableName = "PR&apos;d - Simple PR Tracking.app"
+            BlueprintName = "PR&apos;d - Simple PR Tracking"
+            ReferencedContainer = "container:PR&apos;d - Simple PR Tracking.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "439CC75E1CD97C2700891E68"
+            BuildableName = "PR&apos;d - Simple PR Tracking.app"
+            BlueprintName = "PR&apos;d - Simple PR Tracking"
+            ReferencedContainer = "container:PR&apos;d - Simple PR Tracking.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
