@@ -9,9 +9,8 @@
 import UIKit
 import StoreKit
 
-class PRCellsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, SKProductsRequestDelegate, SKPaymentTransactionObserver {
+class PRCellsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    var product_id: NSString?;
 
     
     @IBOutlet weak var prAndHeaderTable: UITableView!
@@ -19,11 +18,9 @@ class PRCellsViewController: UIViewController, UITableViewDelegate, UITableViewD
    
     override func viewDidLoad() {
         
-        product_id = "com.Nate.PR-s---Simple-PR-Tracking.premiumIAP";
         
         super.viewDidLoad()
         
-        SKPaymentQueue.defaultQueue().addTransactionObserver(self)
 
 
         prAndHeaderTable.dataSource = self
@@ -32,7 +29,6 @@ class PRCellsViewController: UIViewController, UITableViewDelegate, UITableViewD
         prPercentTable.dataSource = self
         prPercentTable.delegate = self
         
-        buyConsumable();
 
         
         
@@ -320,88 +316,12 @@ class PRCellsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     
-    //IAP Setup
     
    
     
     
-    func buyConsumable(){
-        print("About to fetch the products");
-        // We check that we are allow to make the purchase.
-        if (SKPaymentQueue.canMakePayments())
-        {
-            let productID:NSSet = NSSet(object: self.product_id!);
-            let productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID as! Set<String>);
-            productsRequest.delegate = self;
-            productsRequest.start();
-            print("Fething Products");
-        }else{
-            print("can't make purchases");
-        }
-    }
-    
-    // Helper Methods
-    
-    func buyProduct(product: SKProduct){
-        print("Sending the Payment Request to Apple");
-        let payment = SKPayment(product: product)
-        SKPaymentQueue.defaultQueue().addPayment(payment);
-        
-    }
     
     
-    // Delegate Methods for IAP
-    
-    func productsRequest (request: SKProductsRequest, didReceiveResponse response: SKProductsResponse) {
-        print("got the request from Apple")
-        let count : Int = response.products.count
-        if (count>0) {
-            var validProducts = response.products
-            let validProduct: SKProduct = response.products[0] as SKProduct
-            if (validProduct.productIdentifier == self.product_id) {
-                print(validProduct.localizedTitle)
-                print(validProduct.localizedDescription)
-                print(validProduct.price)
-                buyProduct(validProduct);
-            } else {
-                print(validProduct.productIdentifier)
-            }
-        } else {
-            print("nothing")
-        }
-    }
-    
-    
-    func request(request: SKRequest, didFailWithError error: NSError) {
-        print("La vaina fallo");
-    }
-    
-    func paymentQueue(queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction])    {
-        print("Received Payment Transaction Response from Apple");
-        
-        for transaction:AnyObject in transactions {
-            if let trans:SKPaymentTransaction = transaction as? SKPaymentTransaction{
-                switch trans.transactionState {
-                case .Purchased:
-                    print("Product Purchased");
-                    SKPaymentQueue.defaultQueue().finishTransaction(transaction as! SKPaymentTransaction)
-                    break;
-                case .Failed:
-                    print("Purchased Failed");
-                    SKPaymentQueue.defaultQueue().finishTransaction(transaction as! SKPaymentTransaction)
-                    break;
-                    // case .Restored:
-                //[self restoreTransaction:transaction];
-                default:
-                    break;
-                }
-            }
-        }
-        
-    }
-
-    
-
     
     
 

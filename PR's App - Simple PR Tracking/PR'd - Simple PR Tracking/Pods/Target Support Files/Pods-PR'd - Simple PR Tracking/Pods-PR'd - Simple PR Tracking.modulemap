@@ -1,0 +1,6 @@
+framework module Pods_PR_d___Simple_PR_Tracking {
+  umbrella header "Pods-PR'd - Simple PR Tracking-umbrella.h"
+
+  export *
+  module * { export * }
+}

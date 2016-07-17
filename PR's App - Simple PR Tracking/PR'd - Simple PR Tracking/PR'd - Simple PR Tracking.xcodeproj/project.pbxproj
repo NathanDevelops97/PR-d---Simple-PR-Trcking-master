@@ -24,6 +24,7 @@
 		433778F51CE1037900B497C4 /* PRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433778F41CE1037900B497C4 /* PRManager.swift */; };
 		433778FE1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433778FC1CE1081B00B497C4 /* addPRDataModel.xcdatamodeld */; };
 		433779001CE10A7D00B497C4 /* PersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433778FF1CE10A7D00B497C4 /* PersistenceHelper.swift */; };
+		43581B121D3AABD10057D742 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 43581B111D3AABD10057D742 /* UIScrollView+EmptyDataSet.m */; };
 		438B99E61D21C42700AEB107 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 438B99E51D21C42700AEB107 /* StoreKit.framework */; };
 		438BD7A21CE3A2CF00B65576 /* PRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438BD7A11CE3A2CF00B65576 /* PRViewController.swift */; };
 		439CC7631CD97C2800891E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7621CD97C2800891E68 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		439CC76F1CD97C2800891E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439CC76D1CD97C2800891E68 /* LaunchScreen.storyboard */; };
 		439CC77A1CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7791CD97C2800891E68 /* PR_d___Simple_PR_TrackingTests.swift */; };
 		439CC7851CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7841CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift */; };
+		43A00B4A1D386CCC00CD673E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A00B491D386CCC00CD673E /* GoogleService-Info.plist */; };
 		43B3C59A1CFD17CE0048FB95 /* PRPercentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B3C5991CFD17CE0048FB95 /* PRPercentTableViewController.swift */; };
 		43B6F3F51CFDEC8200CF3738 /* prPercentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6F3F31CFDEC8200CF3738 /* prPercentTableViewCell.swift */; };
 		43B6F3F61CFDEC8200CF3738 /* prPercentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B6F3F41CFDEC8200CF3738 /* prPercentTableViewCell.xib */; };
@@ -102,6 +104,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		25C12EFB2023FA4550FCE2D9 /* Pods-PR'd - Simple PR Tracking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PR'd - Simple PR Tracking.release.xcconfig"; path = "Pods/Target Support Files/Pods-PR'd - Simple PR Tracking/Pods-PR'd - Simple PR Tracking.release.xcconfig"; sourceTree = "<group>"; };
 		4304E3BC1D08AFDD00F02A0D /* percentageHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = percentageHeaderTableViewCell.swift; path = ../percentageHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		4304E3BD1D08AFDD00F02A0D /* percentageHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = percentageHeaderTableViewCell.xib; path = ../percentageHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		4304E3C01D08B00100F02A0D /* percentageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = percentageTableViewCell.swift; path = ../percentageTableViewCell.swift; sourceTree = "<group>"; };
@@ -119,6 +122,9 @@
 		433778F41CE1037900B497C4 /* PRManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRManager.swift; path = ../PRManager.swift; sourceTree = "<group>"; };
 		433778FD1CE1081B00B497C4 /* addPRDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = addPRDataModel.xcdatamodel; sourceTree = "<group>"; };
 		433778FF1CE10A7D00B497C4 /* PersistenceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceHelper.swift; sourceTree = "<group>"; };
+		43581B0F1D3AABD00057D742 /* PR'd - Simple PR Tracking-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PR'd - Simple PR Tracking-Bridging-Header.h"; sourceTree = "<group>"; };
+		43581B101D3AABD10057D742 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		43581B111D3AABD10057D742 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		438B99E51D21C42700AEB107 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		438BD7A11CE3A2CF00B65576 /* PRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRViewController.swift; sourceTree = "<group>"; };
 		439CC75F1CD97C2700891E68 /* PR'd - Simple PR Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PR'd - Simple PR Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +139,7 @@
 		439CC7801CD97C2800891E68 /* PR'd - Simple PR TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PR'd - Simple PR TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		439CC7841CD97C2800891E68 /* PR_d___Simple_PR_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PR_d___Simple_PR_TrackingUITests.swift"; sourceTree = "<group>"; };
 		439CC7861CD97C2800891E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A00B491D386CCC00CD673E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43B3C5991CFD17CE0048FB95 /* PRPercentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPercentTableViewController.swift; sourceTree = "<group>"; };
 		43B6F3F31CFDEC8200CF3738 /* prPercentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prPercentTableViewCell.swift; sourceTree = "<group>"; };
 		43B6F3F41CFDEC8200CF3738 /* prPercentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = prPercentTableViewCell.xib; sourceTree = "<group>"; };
@@ -171,6 +178,8 @@
 		43DBEDB41CE64CEC0078D584 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		43E5A7CA1D05D802002E18A2 /* PRPercentageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRPercentageTableViewCell.swift; sourceTree = "<group>"; };
 		43E5A7CB1D05D802002E18A2 /* PRPercentageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PRPercentageTableViewCell.xib; sourceTree = "<group>"; };
+		7B2B3B7CEE2C75DE3BB57FE2 /* Pods-PR'd - Simple PR Tracking.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PR'd - Simple PR Tracking.distribution.xcconfig"; path = "Pods/Target Support Files/Pods-PR'd - Simple PR Tracking/Pods-PR'd - Simple PR Tracking.distribution.xcconfig"; sourceTree = "<group>"; };
+		D6E99BB9BEF2218C6385D9F5 /* Pods-PR'd - Simple PR Tracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PR'd - Simple PR Tracking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PR'd - Simple PR Tracking/Pods-PR'd - Simple PR Tracking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +257,7 @@
 				439CC7831CD97C2800891E68 /* PR'd - Simple PR TrackingUITests */,
 				439CC7601CD97C2700891E68 /* Products */,
 				43CDD52E1CDAD3C30022B178 /* Frameworks */,
+				8F4BB51A55C51A47AE73E025 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +274,8 @@
 		439CC7611CD97C2800891E68 /* PR'd - Simple PR Tracking */ = {
 			isa = PBXGroup;
 			children = (
+				43581B101D3AABD10057D742 /* UIScrollView+EmptyDataSet.h */,
+				43581B111D3AABD10057D742 /* UIScrollView+EmptyDataSet.m */,
 				439CC7621CD97C2800891E68 /* AppDelegate.swift */,
 				43CDD5281CDA6E9C0022B178 /* DataTableExercisesTableViewController.swift */,
 				43CDD52A1CDAC85B0022B178 /* MoreTableViewController.swift */,
@@ -271,6 +283,7 @@
 				438BD7A11CE3A2CF00B65576 /* PRViewController.swift */,
 				43B3C5991CFD17CE0048FB95 /* PRPercentTableViewController.swift */,
 				43C86AC41D0F4D9600965787 /* PRCellsViewController.swift */,
+				43A00B491D386CCC00CD673E /* GoogleService-Info.plist */,
 				439CC7681CD97C2800891E68 /* Main.storyboard */,
 				431A92FD1CE51D67004E6BCF /* Custom Interfaces */,
 				431A92F21CE4E0D3004E6BCF /* Core Data */,
@@ -280,6 +293,7 @@
 				439CC76B1CD97C2800891E68 /* Assets.xcassets */,
 				439CC76D1CD97C2800891E68 /* LaunchScreen.storyboard */,
 				439CC7701CD97C2800891E68 /* Info.plist */,
+				43581B0F1D3AABD00057D742 /* PR'd - Simple PR Tracking-Bridging-Header.h */,
 			);
 			path = "PR'd - Simple PR Tracking";
 			sourceTree = "<group>";
@@ -347,6 +361,16 @@
 			path = Spring;
 			sourceTree = "<group>";
 		};
+		8F4BB51A55C51A47AE73E025 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6E99BB9BEF2218C6385D9F5 /* Pods-PR'd - Simple PR Tracking.debug.xcconfig */,
+				25C12EFB2023FA4550FCE2D9 /* Pods-PR'd - Simple PR Tracking.release.xcconfig */,
+				7B2B3B7CEE2C75DE3BB57FE2 /* Pods-PR'd - Simple PR Tracking.distribution.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B0B3E2571D2C2F6B0018A008 /* Open Source Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,10 +386,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439CC7891CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR Tracking" */;
 			buildPhases = (
+				4A2C817A2C9C56C104786922 /* [CP] Check Pods Manifest.lock */,
 				439CC75B1CD97C2700891E68 /* Sources */,
 				439CC75C1CD97C2700891E68 /* Frameworks */,
 				439CC75D1CD97C2700891E68 /* Resources */,
 				433AA6311D2AA70C007CF2A2 /* Embed Frameworks */,
+				7BBD1BE7F9418F3DCD92D2AD /* [CP] Embed Pods Frameworks */,
+				E1BB413DBA4F321AFA58E9BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,9 +407,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439CC78C1CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR TrackingTests" */;
 			buildPhases = (
+				85699BBD93395AEE03B0E314 /* [CP] Check Pods Manifest.lock */,
 				439CC7711CD97C2800891E68 /* Sources */,
 				439CC7721CD97C2800891E68 /* Frameworks */,
 				439CC7731CD97C2800891E68 /* Resources */,
+				0D9AB8A90C122C7EFC68455D /* [CP] Embed Pods Frameworks */,
+				1657D0EDB14DA2256C1C65A3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,9 +428,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439CC78F1CD97C2800891E68 /* Build configuration list for PBXNativeTarget "PR'd - Simple PR TrackingUITests" */;
 			buildPhases = (
+				F25D12522930B4CD60687C11 /* [CP] Check Pods Manifest.lock */,
 				439CC77C1CD97C2800891E68 /* Sources */,
 				439CC77D1CD97C2800891E68 /* Frameworks */,
 				439CC77E1CD97C2800891E68 /* Resources */,
+				87C3D0338D09F57A379B691C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -427,7 +459,13 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 333JD3XATC;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -475,6 +513,7 @@
 				439CC76C1CD97C2800891E68 /* Assets.xcassets in Resources */,
 				43DBEDC41CE64CEC0078D584 /* LoadingView.xib in Resources */,
 				4304E3C31D08B00100F02A0D /* percentageTableViewCell.xib in Resources */,
+				43A00B4A1D386CCC00CD673E /* GoogleService-Info.plist in Resources */,
 				43DBEDC11CE64CEC0078D584 /* Info.plist in Resources */,
 				439CC76A1CD97C2800891E68 /* Main.storyboard in Resources */,
 			);
@@ -496,6 +535,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D9AB8A90C122C7EFC68455D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PR'd - Simple PR TrackingTests/Pods-PR'd - Simple PR TrackingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1657D0EDB14DA2256C1C65A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PR'd - Simple PR TrackingTests/Pods-PR'd - Simple PR TrackingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A2C817A2C9C56C104786922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BBD1BE7F9418F3DCD92D2AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PR'd - Simple PR Tracking/Pods-PR'd - Simple PR Tracking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85699BBD93395AEE03B0E314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87C3D0338D09F57A379B691C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PR'd - Simple PR TrackingUITests/Pods-PR'd - Simple PR TrackingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1BB413DBA4F321AFA58E9BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PR'd - Simple PR Tracking/Pods-PR'd - Simple PR Tracking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F25D12522930B4CD60687C11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		439CC75B1CD97C2700891E68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -505,6 +667,7 @@
 				43DBEDC81CE64CEC0078D584 /* SpringAnimation.swift in Sources */,
 				43DBEDBB1CE64CEC0078D584 /* DesignableLabel.swift in Sources */,
 				43DBEDC61CE64CEC0078D584 /* SoundPlayer.swift in Sources */,
+				43581B121D3AABD10057D742 /* UIScrollView+EmptyDataSet.m in Sources */,
 				43DBEDC21CE64CEC0078D584 /* KeyboardLayoutConstraint.swift in Sources */,
 				43DBEDCA1CE64CEC0078D584 /* SpringImageView.swift in Sources */,
 				43B6F3F51CFDEC8200CF3738 /* prPercentTableViewCell.swift in Sources */,
@@ -622,8 +785,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -638,7 +801,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -646,10 +809,12 @@
 		};
 		432F25241D35E2D900B1FF11 /* Distribution */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2B3B7CEE2C75DE3BB57FE2 /* Pods-PR'd - Simple PR Tracking.distribution.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "PR'd - Simple PR Tracking/Info.plist";
@@ -657,7 +822,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-s---Simple-PR-Tracking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PR'd - Simple PR Tracking/PR'd - Simple PR Tracking-Bridging-Header.h";
 			};
 			name = Distribution;
 		};
@@ -702,8 +868,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -725,7 +891,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -749,8 +915,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -765,7 +931,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -773,10 +939,12 @@
 		};
 		439CC78A1CD97C2800891E68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E99BB9BEF2218C6385D9F5 /* Pods-PR'd - Simple PR Tracking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "PR'd - Simple PR Tracking/Info.plist";
@@ -784,16 +952,20 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-s---Simple-PR-Tracking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PR'd - Simple PR Tracking/PR'd - Simple PR Tracking-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		439CC78B1CD97C2800891E68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C12EFB2023FA4550FCE2D9 /* Pods-PR'd - Simple PR Tracking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Gene Grant (333JD3XATC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gene Grant (333JD3XATC)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "PR'd - Simple PR Tracking/Info.plist";
@@ -801,7 +973,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Nate.PR-s---Simple-PR-Tracking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "647a5954-fc5c-47d9-8499-4314b2fb339a";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PR'd - Simple PR Tracking/PR'd - Simple PR Tracking-Bridging-Header.h";
 			};
 			name = Release;
 		};

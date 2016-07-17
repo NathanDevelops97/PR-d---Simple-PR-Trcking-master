@@ -8,9 +8,11 @@
 
 import UIKit
 
-class PRViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+class PRViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     @IBOutlet var tblTasks : UITableView!
+    
     
     
     //For persisting data
@@ -22,8 +24,9 @@ class PRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         self.tblTasks.registerNib(UINib(nibName: "PRTableViewCell", bundle: nil), forCellReuseIdentifier: "PRTableCell")
         tblTasks.tableFooterView = UIView()
     
-        
-        
+        tblTasks.emptyDataSetSource = self
+        tblTasks.emptyDataSetDelegate = self
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -64,14 +67,30 @@ class PRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
         
-        
-        
-        
         return cell
         
         
         
     }
+    
+    
+    // EMPTY DATA SET
+    
+    
+    func titleForEmptyDataSet(scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "You Don't Have Any PR's Added,"
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)]
+        return NSAttributedString(string: str, attributes: attrs)
+    }
+    
+    func descriptionForEmptyDataSet(scrollView: UIScrollView) -> NSAttributedString? {
+        let str = "Tap the + button to add your first PR!"
+        let attrs = [NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleCallout)]
+        return NSAttributedString(string: str, attributes: attrs)
+    }
+    
+
+    
     
     
     
@@ -107,20 +126,9 @@ class PRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
             viewController.prDescValue = prDescString
 
             
-            
-            
-            
-            
-            
         }
         
-        
-        
-        
     }
-    
-   
-    
     
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){

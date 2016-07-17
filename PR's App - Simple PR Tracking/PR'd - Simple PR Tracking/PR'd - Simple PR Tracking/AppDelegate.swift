@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseMessaging
 
 
 @UIApplicationMain
@@ -29,7 +31,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance().tintColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
 
    
-    
+        // Use Firebase library to configure APIs
+        FIRApp.configure()
+        
+        let settings: UIUserNotificationSettings =
+            UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        application.registerUserNotificationSettings(settings)
+        application.registerForRemoteNotifications()
+        
+        let notificationTypes : UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound,]
+        let notificationSettings = UIUserNotificationSettings(forTypes: notificationTypes, categories: nil)
+        application.registerForRemoteNotifications()
+        application.registerUserNotificationSettings(notificationSettings)
+        
+        
 
         return true
 
@@ -38,6 +53,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        
+        print("MessageID : \(userInfo["gcm_message_id"]!)")
+        
+        print(userInfo)
+    }
     
 
     func applicationWillResignActive(application: UIApplication) {

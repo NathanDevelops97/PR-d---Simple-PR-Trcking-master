@@ -55,7 +55,7 @@ class MoreTableViewController: UITableViewController {
             case 0:
                 url = NSURL(string: "http://www.instagram.com/prsinsta")
             case 1:
-                url = NSURL(string: "https://www.snapchat.com/add/prssnap")
+                url = NSURL(string: "https://www.snapchat.com/add/nathangrant97")
             default:
                 return;
             }
