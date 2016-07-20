@@ -108,6 +108,8 @@ class AbExercisesTableViewController: UITableViewController, UISearchBarDelegate
             })
             
         }
+        
+        
     
     
         func searchBarTextDidBeginEditing(searchBar: UISearchBar) {

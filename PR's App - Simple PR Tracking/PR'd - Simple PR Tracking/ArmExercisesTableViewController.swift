@@ -22,7 +22,7 @@ class ArmExercisesTableViewController: UITableViewController, UISearchBarDelegat
            self.navigationController!.navigationBar.tintColor = UIColor(red: 246/255.0, green: 75/255.0, blue: 55/255.0, alpha: 1.0)
         
         tableView.dataSource = self
-       searchBar.delegate = self
+        searchBar.delegate = self
         filteredData = armExercises
         
     }

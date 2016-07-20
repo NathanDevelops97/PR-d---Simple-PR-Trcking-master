@@ -8,27 +8,35 @@
 
 import UIKit
 
-class DataTableExercisesTableViewController: UITableViewController {
-    
+class DataTableExercisesTableViewController: UITableViewController, UISearchBarDelegate {
     
     let exercises = ["Abs", "Arms", "Back", "Chest", "Legs", "Shoulders", "Triceps"]
     
+    let allExercises = ["Ab Roller", "Crunches", "Flat Lying Bench Raise", "Leg Raises", "Russian Twist", "Weighted Crunch","Tricep Pushdown V Bar", "Barbell Tricep Curl", "Lat Pull Down - V Bar", "Barbell Curl", "Dumbell Curls Alternating", "Preacher Curl", "Reverse Barbell Curl","Barbell Row", "Cable Row", "Chin Up", "Straight Leg Deadlift", "Sumo Deadlift", "Dumbell Row", "Dumbell Shrug", "Hyperextensions", "Lat Pull Down", "Pull Up (BodyWeight)", "Reverse Grip Barbell Row", "Pull Up (Weighted)","Barbell Tricep Curl", "Bench Press", "Bento Over Flyes", "Cable Crossovers", "Decline Dumbell Press", "Dumbell Press", "Dumbell Flies", "Incline Bench Press", "Incline Dumbell Flyes","Back Squat","Calf Raises", "Donkey Calf Raises", "Dumbell Squat", "Front Squat", "Leg Curls", "Leg Extensions", "Leg Press", "Lunges","Arnold Dumbell Press","Dumbell Lateral Raise", "Dumbell Side Lateral Raise", "Front Dumbell Press", "Military Press", "Shoulder Dumbell Press", "Standing Shoulder Press", "Upright Barbell Row", "Upright Rows","Close Grip Bench Press","Dips", "Dips (Weighted)", "Pushdowns", "Rope Extensions", "Tricep Extensions", "Barbell Tricep Curl"]
     
     
+    @IBOutlet weak var searchBar: UISearchBar!
     
-
+    
+    @IBOutlet var ExerciseTable: UITableView!
+    
+    var filteredData: [String]!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
-           self.navigationController!.navigationBar.tintColor = UIColor(red: 246/255.0, green: 75/255.0, blue: 55/255.0, alpha: 1.0)
+        searchBar.delegate = self
+        filteredData = exercises
+        
+        
         self.tableView.reloadData()
         
-      
-
     }
     
-      
+    
+    
     
     // MARK: - Table view data source
     
@@ -42,143 +50,204 @@ class DataTableExercisesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        return exercises.count
+        return filteredData.count
         
-          }
-
+    }
+    
+    
+    
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        self.searchBar.showsCancelButton = true
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+    }
+    
+    
+    
+    
+    
+    
+    // This method updates filteredData based on the text in the Search Box
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        
+        filteredData = searchText.isEmpty ? allExercises : allExercises.filter({(dataString: String) -> Bool in
+            return dataString.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+        })
+        
+        // When there is no text, filteredData is the same as the original data
+        if searchText.isEmpty {
+            filteredData = exercises
+        } else {
+            
+            // The user has entered text into the search box
+            // Use the filter method to iterate over all items in the data array
+            // For each item, return true if the item should be included and false if the
+            // item should NOT be included
+            filteredData = allExercises.filter({(dataItem: String) -> Bool in
+                // If dataItem matches the searchText, return true to include it
+                if dataItem.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil {
+                    return true
+                } else {
+                    return false
+                }
+            })
+        }
+        tableView.reloadData()
+    }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
         
-        cell.textLabel?.text = exercises[indexPath.row]
+        cell.textLabel?.text = filteredData[indexPath.row]
         
         
         // Configure the cell...
         
-      
         
-            return cell
+        
+        return cell
         
     }
     
-
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         
-     
-            switch indexPath.row {
-            case 0:
-                performSegueWithIdentifier("abSegue", sender: self)
-            case 1:
-                performSegueWithIdentifier("armSegue", sender: self)
-            case 2:
-                performSegueWithIdentifier("backSegue", sender: self)
-            case 3:
-                performSegueWithIdentifier("chestSegue", sender: self)
-            case 4:
-                performSegueWithIdentifier("legSegue", sender: self)
-            case 5:
-                performSegueWithIdentifier("shouldersSegue", sender: self)
-            case 6:
-                performSegueWithIdentifier("tricepSegue", sender: self)
-            default:
-                return;
-            }
+        
+        switch indexPath.row {
+        case 0:
+            performSegueWithIdentifier("abSegue", sender: self)
+        case 1:
+            performSegueWithIdentifier("armSegue", sender: self)
+        case 2:
+            performSegueWithIdentifier("backSegue", sender: self)
+        case 3:
+            performSegueWithIdentifier("legSegue", sender: self)
+        case 4:
+            performSegueWithIdentifier("chestSegue", sender: self)
+        case 5:
+            performSegueWithIdentifier("shouldersSegue", sender: self)
+        case 6:
+            performSegueWithIdentifier("tricepSegue", sender: self)
+        default:
+            return;
+        }
         
         
+    }
+    
+    
+    
+}
+
+
+func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    
+    
+    
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "abSegue" {
+            _ = segue.destinationViewController as? AbExercisesTableViewController
+            
+        }
+        
+        if segue.identifier == "armSegue" {
+            _ = segue.destinationViewController as? ArmExercisesTableViewController
+            
+        }
+        
+        if segue.identifier == "backSegue" {
+            _ = segue.destinationViewController as? BackExercisesTableViewController
+            
+        }
+        
+        if segue.identifier == "legSegue" {
+            _ = segue.destinationViewController as? LegExercisesTableViewController
+            
+        }
+        
+        if segue.identifier == "chestSegue" {
+            _ = segue.destinationViewController as? ChestExercisesTableViewController
+            
+        }
+        
+        if segue.identifier == "shouldersSegue" {
+            _ = segue.destinationViewController as? ShoulderExercisesTableViewController
+            
+        }
+        
+        if segue.identifier == "tricepSegue" {
+            _ = segue.destinationViewController as? TricepExercisesTableViewController
+            
+        }
     }
     
 }
 
-    
-      
-        
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            if segue.identifier == "abSegue" {
-                _ = segue.destinationViewController as? AbExercisesTableViewController
-                
-            }
-            
-            if segue.identifier == "armSegue" {
-                _ = segue.destinationViewController as? ArmExercisesTableViewController
-                
-            }
-            
-            if segue.identifier == "backSegue" {
-                _ = segue.destinationViewController as? BackExercisesTableViewController
-                
-            }
-            
-            if segue.identifier == "chestSegue" {
-                _ = segue.destinationViewController as? ChestExercisesTableViewController
-                
-            }
-            
-            if segue.identifier == "legSegue" {
-                _ = segue.destinationViewController as? LegExercisesTableViewController
-                
-            }
-            
-            if segue.identifier == "shouldersSegue" {
-                _ = segue.destinationViewController as? ShoulderExercisesTableViewController
-                
-            }
-            
-            if segue.identifier == "tricepSegue" {
-                _ = segue.destinationViewController as? TricepExercisesTableViewController
-                
-            }
 
-    
-    
-       
 
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
 
-    }
-    */
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
-}
+
+
+
+/*
+ // Override to support conditional editing of the table view.
+ override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+ // Return false if you do not want the specified item to be editable.
+ return true
+ }
+ */
+
+/*
+ // Override to support editing the table view.
+ override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+ if editingStyle == .Delete {
+ // Delete the row from the data source
+ tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+ } else if editingStyle == .Insert {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
+
+/*
+ // Override to support rearranging the table view.
+ override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+ 
+ }
+ */
+
+/*
+ // Override to support conditional rearranging of the table view.
+ override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+ // Return false if you do not want the item to be re-orderable.
+ return true
+ }
+ */
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+ // Get the new view controller using segue.destinationViewController.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
+
