@@ -80,6 +80,9 @@ class ChestExercisesTableViewController: UITableViewController, UISearchBarDeleg
         
         let chest = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = chest

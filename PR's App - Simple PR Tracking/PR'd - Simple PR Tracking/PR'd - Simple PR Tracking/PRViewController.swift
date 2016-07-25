@@ -27,6 +27,7 @@ class PRViewController: UIViewController, UITableViewDelegate, UITableViewDataSo
         tblTasks.emptyDataSetSource = self
         tblTasks.emptyDataSetDelegate = self
 
+
     }
     
     override func viewWillAppear(animated: Bool) {

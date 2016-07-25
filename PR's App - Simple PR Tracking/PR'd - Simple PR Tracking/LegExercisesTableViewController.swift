@@ -81,6 +81,9 @@ class LegExercisesTableViewController: UITableViewController, UISearchBarDelegat
         
         let leg = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = leg

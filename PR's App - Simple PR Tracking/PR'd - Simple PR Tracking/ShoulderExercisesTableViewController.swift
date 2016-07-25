@@ -85,6 +85,9 @@ class ShoulderExercisesTableViewController: UITableViewController, UISearchBarDe
         
         let shoulder = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = shoulder

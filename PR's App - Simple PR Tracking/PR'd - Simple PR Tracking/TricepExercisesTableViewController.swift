@@ -84,6 +84,9 @@ class TricepExercisesTableViewController: UITableViewController, UISearchBarDele
         
         let tricep = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = tricep

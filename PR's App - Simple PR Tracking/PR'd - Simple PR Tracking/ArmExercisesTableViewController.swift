@@ -79,6 +79,9 @@ class ArmExercisesTableViewController: UITableViewController, UISearchBarDelegat
         
         let arm = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = arm

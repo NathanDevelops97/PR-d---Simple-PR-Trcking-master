@@ -98,6 +98,8 @@ class addPRTableViewController: UITableViewController, UITextFieldDelegate {
             txtDesc.text = nil
             txtWeight.text = nil
             
+
+            
         }
     }
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {

@@ -53,7 +53,7 @@ class MoreTableViewController: UITableViewController {
         case 1:
             switch indexPath.row{
             case 0:
-                url = NSURL(string: "http://www.instagram.com/prsinsta")
+                url = NSURL(string: "http://www.instagram.com/n.double.g")
             case 1:
                 url = NSURL(string: "https://www.snapchat.com/add/nathangrant97")
             default:

@@ -81,6 +81,9 @@ class AbExercisesTableViewController: UITableViewController, UISearchBarDelegate
         
         let abs = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = abs

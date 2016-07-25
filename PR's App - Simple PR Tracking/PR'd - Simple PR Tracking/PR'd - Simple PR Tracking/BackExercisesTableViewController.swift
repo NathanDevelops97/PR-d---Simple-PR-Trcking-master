@@ -80,6 +80,9 @@ class BackExercisesTableViewController: UITableViewController, UISearchBarDelega
         
         let back = filteredData[indexPath.row]
         
+        cell.accessoryType = .DisclosureIndicator
+
+        
         // Configure the cell...
         
         cell.textLabel?.text = back

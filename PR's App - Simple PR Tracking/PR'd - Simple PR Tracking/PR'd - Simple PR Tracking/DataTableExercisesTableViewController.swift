@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataTableExercisesTableViewController: UITableViewController, UISearchBarDelegate {
+class DataTableExercisesTableViewController: UITableViewController, UISearchBarDelegate, UISearchControllerDelegate {
     
     let exercises = ["Abs", "Arms", "Back", "Chest", "Legs", "Shoulders", "Triceps"]
     
@@ -29,7 +29,7 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
         tableView.dataSource = self
         searchBar.delegate = self
         filteredData = exercises
-        
+
         
         self.tableView.reloadData()
         
@@ -53,21 +53,6 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
         return filteredData.count
         
     }
-    
-    
-    
-    
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        self.searchBar.showsCancelButton = true
-    }
-    
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        searchBar.showsCancelButton = false
-        searchBar.text = ""
-        searchBar.resignFirstResponder()
-    }
-    
-    
     
     
     
@@ -108,7 +93,9 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
         
         cell.textLabel?.text = filteredData[indexPath.row]
         
-        
+        cell.accessoryType = .DisclosureIndicator
+
+
         // Configure the cell...
         
         
@@ -120,7 +107,7 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        
+        if (tableView == self.tableView) {
         
         switch indexPath.row {
         case 0:
@@ -140,21 +127,36 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
         default:
             return;
         }
-        
-        
+    
+
+    
+}
+
+var text:String = ""
+
+
+func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+    if let speciesDetailVC = segue.destinationViewController as? addPRTableViewController
+    {
+        // gotta check if we're currently searching
+        if self.searchDisplayController!.active {
+            let indexPath = self.searchDisplayController?.searchResultsTableView.indexPathForSelectedRow!
+            if indexPath != nil {
+                speciesDetailVC.text = self.allExercises[indexPath!.row]
+            }
+        } else {
+            let indexPath = self.ExerciseTable?.indexPathForSelectedRow!
+            if indexPath != nil {
+                speciesDetailVC.text = self.allExercises[indexPath!.row]
+            }
+        }
     }
     
     
     
-}
-
-
-func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
-    
-    
-    
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == "abSegue" {
             _ = segue.destinationViewController as? AbExercisesTableViewController
             
@@ -188,16 +190,17 @@ func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "tricepSegue" {
             _ = segue.destinationViewController as? TricepExercisesTableViewController
             
+        } else {
+            
+        if segue.identifier == "YourSegue" {
+            let yourOtherVC = segue.destinationViewController as? addPRTableViewController
+            yourOtherVC?.text = text
+
         }
+            
     }
-    
+  }
 }
-
-
-
-
-
-
 
 
 
@@ -249,5 +252,7 @@ func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
  // Pass the selected object to the new view controller.
  }
  */
+    }
+    
 
-
+}
