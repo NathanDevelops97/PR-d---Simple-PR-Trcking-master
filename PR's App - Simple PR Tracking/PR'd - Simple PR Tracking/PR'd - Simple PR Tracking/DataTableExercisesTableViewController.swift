@@ -27,14 +27,17 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
         super.viewDidLoad()
         
         tableView.dataSource = self
-        searchBar.delegate = self
-        filteredData = exercises
+        tableView.delegate = self
+        //searchBar.delegate = self
+        //filteredData = exercises
 
         
         self.tableView.reloadData()
         
     }
     
+
+   
     
     
     
@@ -50,48 +53,48 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
-        return filteredData.count
+        return exercises.count
         
     }
     
     
+    // NEXT VERSION
     
-    
-    // This method updates filteredData based on the text in the Search Box
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        
-        filteredData = searchText.isEmpty ? allExercises : allExercises.filter({(dataString: String) -> Bool in
-            return dataString.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
-        })
-        
-        // When there is no text, filteredData is the same as the original data
-        if searchText.isEmpty {
-            filteredData = exercises
-        } else {
-            
-            // The user has entered text into the search box
-            // Use the filter method to iterate over all items in the data array
-            // For each item, return true if the item should be included and false if the
-            // item should NOT be included
-            filteredData = allExercises.filter({(dataItem: String) -> Bool in
-                // If dataItem matches the searchText, return true to include it
-                if dataItem.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil {
-                    return true
-                } else {
-                    return false
-                }
-            })
-        }
-        tableView.reloadData()
-    }
+//    // This method updates filteredData based on the text in the Search Box
+//    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+//        
+//        
+//        filteredData = searchText.isEmpty ? allExercises : allExercises.filter({(dataString: String) -> Bool in
+//            return dataString.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+//        })
+//        
+//        // When there is no text, filteredData is the same as the original data
+//        if searchText.isEmpty {
+//            filteredData = exercises
+//        } else {
+//            
+//            // The user has entered text into the search box
+//            // Use the filter method to iterate over all items in the data array
+//            // For each item, return true if the item should be included and false if the
+//            // item should NOT be included
+//            filteredData = allExercises.filter({(dataItem: String) -> Bool in
+//                // If dataItem matches the searchText, return true to include it
+//                if dataItem.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil {
+//                    return true
+//                } else {
+//                    return false
+//                }
+//            })
+//        }
+//        tableView.reloadData()
+//    }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
         
-        cell.textLabel?.text = filteredData[indexPath.row]
+        cell.textLabel?.text = exercises[indexPath.row]
         
         cell.accessoryType = .DisclosureIndicator
 
@@ -133,27 +136,6 @@ class DataTableExercisesTableViewController: UITableViewController, UISearchBarD
 }
 
 var text:String = ""
-
-
-func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-
-    if let speciesDetailVC = segue.destinationViewController as? addPRTableViewController
-    {
-        // gotta check if we're currently searching
-        if self.searchDisplayController!.active {
-            let indexPath = self.searchDisplayController?.searchResultsTableView.indexPathForSelectedRow!
-            if indexPath != nil {
-                speciesDetailVC.text = self.allExercises[indexPath!.row]
-            }
-        } else {
-            let indexPath = self.ExerciseTable?.indexPathForSelectedRow!
-            if indexPath != nil {
-                speciesDetailVC.text = self.allExercises[indexPath!.row]
-            }
-        }
-    }
-    
-    
     
     func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -190,16 +172,26 @@ func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "tricepSegue" {
             _ = segue.destinationViewController as? TricepExercisesTableViewController
             
-        } else {
-            
-        if segue.identifier == "YourSegue" {
-            let yourOtherVC = segue.destinationViewController as? addPRTableViewController
-            yourOtherVC?.text = text
-
         }
-            
-    }
-  }
+        
+//        else {
+//            
+//            if let speciesDetailVC = segue.destinationViewController as? addPRTableViewController
+//            {
+//                // gotta check if we're currently searching
+//                if self.searchDisplayController!.active {
+//                    let indexPath = self.searchDisplayController?.searchResultsTableView.indexPathForSelectedRow!
+//                    if indexPath != nil {
+//                        speciesDetailVC.text = self.allExercises[indexPath!.row]
+//                    }
+//                } else {
+//                    let indexPath = self.ExerciseTable?.indexPathForSelectedRow!
+//                    if indexPath != nil {
+//                        speciesDetailVC.text = self.allExercises[indexPath!.row]
+//                    }
+//                }
+//        }
+//  }
 }
 
 
