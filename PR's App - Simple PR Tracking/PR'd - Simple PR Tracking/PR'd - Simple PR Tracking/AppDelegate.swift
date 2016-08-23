@@ -54,11 +54,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+  
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject],
+                     fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
         
-        print("MessageID : \(userInfo["gcm_message_id"]!)")
+        // Print message ID.
+        print("Message ID: \(userInfo["gcm.message_id"]!)")
         
-        print(userInfo)
+        // Print full message.
+        print("%@", userInfo)
+    }
+    
+    func application(application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
+    {
+        FIRInstanceID.instanceID().setAPNSToken(deviceToken, type: FIRInstanceIDAPNSTokenType.Prod)
     }
     
 
